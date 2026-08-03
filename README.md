@@ -77,7 +77,10 @@ UCurses is a coding centric framework and all of its core functionalities are us
 The staic singleton reference to the UCurses class can be found within __UCurses.Instance__ , from there you can find all UCurses public properties and methods.
 
 
-Example: UCurses.Instance.printCharacter(new Vector2Int(0,0), ‘A’, Color.red);
+__Example:__ UCurses.Instance.printCharacter(new Vector2Int(0,0), ‘A’, Color.red);
 
 
-Further instructions can be found within the included documentation.
+Further instructions can be found within the included documentation:
+https://github.com/Doughm/UCurses/blob/main/Documentation/Quick%20Start.pdf
+https://github.com/Doughm/UCurses/blob/main/Documentation/API%20Documentation.pdf
+https://github.com/Doughm/UCurses/blob/main/Documentation/Sample%20Script%20Documentation.pdf
