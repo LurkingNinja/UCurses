@@ -32,11 +32,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4581876535557958504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3089968320713496232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -331,6 +331,8 @@ MonoBehaviour:
   _aspectRatio: 1.3333
   _characterSize: {x: 9, y: 14}
   _offsetLine: 1
+  _screenFilterMode: 0
+  _characterFilterMode: 0
   _cameraMainObject: {fileID: 1066617370821284656}
   _canvasGridObject: {fileID: 7900946449562911183}
   _canvasViewportObject: {fileID: 5551683899522327793}
@@ -344,1018 +346,1272 @@ MonoBehaviour:
     _character: 9786
     _uSprite: {fileID: 21300000, guid: 8db2a25978b3f8348b6f72348d7fe117, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 2
     _character: 9787
     _uSprite: {fileID: 21300000, guid: 74a778ba85ec29e48962e7d7894b79bf, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 3
     _character: 9829
     _uSprite: {fileID: 21300000, guid: a189c4e916943314fa57d1d4a8293082, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 4
     _character: 9830
     _uSprite: {fileID: 21300000, guid: 54c66ad3503133c499ca85daf5a4b37d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 5
     _character: 9827
     _uSprite: {fileID: 21300000, guid: e630b4738a2bdd54db3e242549a2ec6a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 6
     _character: 9824
     _uSprite: {fileID: 21300000, guid: 2e09187939a6d1740b62ad103ef30c2e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 7
     _character: 8226
     _uSprite: {fileID: 21300000, guid: 59560d0f5cbe69d4baf139c8a4f94813, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 8
     _character: 9688
     _uSprite: {fileID: 21300000, guid: f974b7d0d6535e14fac3de763517d331, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 9
     _character: 9675
     _uSprite: {fileID: 21300000, guid: 9ac211060bb9c68489e8c328669fa62d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 10
     _character: 9689
     _uSprite: {fileID: 21300000, guid: e2f18004c5c851a4899943da013d749d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 11
     _character: 9794
     _uSprite: {fileID: 21300000, guid: 1c0aba86cb5691e4a95735cf4d03401d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 12
     _character: 9792
     _uSprite: {fileID: 21300000, guid: e3ce6cbc858c9944b9acdb9c95b62bd5, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 13
     _character: 9834
     _uSprite: {fileID: 21300000, guid: a533578d77fe4cd489e1a9d6141fcb02, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 14
     _character: 9835
     _uSprite: {fileID: 21300000, guid: bc9b938ff576c8d449ba0da65a92dd68, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 15
     _character: 9788
     _uSprite: {fileID: 21300000, guid: 0ad3f6be121b3a14f9d9af216b19ca5c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 16
     _character: 9658
     _uSprite: {fileID: 21300000, guid: 5d23e6d3d597d6248b7f9247422bc7fd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 17
     _character: 9668
     _uSprite: {fileID: 21300000, guid: 7879d6fb8d00dda4188168a776c9f43a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 18
     _character: 8597
     _uSprite: {fileID: 21300000, guid: e137d9997f1ba414e942ccfe3aec91e6, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 19
     _character: 8252
     _uSprite: {fileID: 21300000, guid: ec3a696086e0fa542b18a08990250eae, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 20
     _character: 182
     _uSprite: {fileID: 21300000, guid: ca178b365841d3748be08bb875484acf, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 21
     _character: 167
     _uSprite: {fileID: 21300000, guid: 42b9f015cec8e594ba8ea9f61b6fb576, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 22
     _character: 9644
     _uSprite: {fileID: 21300000, guid: f1e12b1003da26e49a1c233af1b0db2e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 23
     _character: 8616
     _uSprite: {fileID: 21300000, guid: f92f84134b1dbee46a713d2f6edb04c0, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 24
     _character: 8593
     _uSprite: {fileID: 21300000, guid: a9f167aa4fb31ad43b29ac7f4ecfa37b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 25
     _character: 8595
     _uSprite: {fileID: 21300000, guid: f7153a4425a9a8748bd66aa4f30cf737, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 26
     _character: 8594
     _uSprite: {fileID: 21300000, guid: 0843e5ea8407aeb4c8f45a5d19c519fe, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 27
     _character: 8592
     _uSprite: {fileID: 21300000, guid: afda418e99449c44899ab157674b3f13, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 28
     _character: 8735
     _uSprite: {fileID: 21300000, guid: f95f0f5a586aaab44858724f38f94583, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 29
     _character: 8596
     _uSprite: {fileID: 21300000, guid: 1cf1c00b246d3764a9950b77bd01a95a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 30
     _character: 9650
     _uSprite: {fileID: 21300000, guid: dc1aeb573c501b94d87e4ee36cf3d8e2, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 31
     _character: 9660
     _uSprite: {fileID: 21300000, guid: 63fbfc21b69c2754589a0bf25da3ed47, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 32
     _character: 32
     _uSprite: {fileID: 21300000, guid: 5259e8bdd796c21488013b86eb2d6e58, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 33
     _character: 33
     _uSprite: {fileID: 21300000, guid: 60b8dd119423818438f16d6965d9b23b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 34
     _character: 34
     _uSprite: {fileID: 21300000, guid: fb76e1af99e5245499277de1ea488d98, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 35
     _character: 35
     _uSprite: {fileID: 21300000, guid: 519e51496d479524aa753799563c3523, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 36
     _character: 36
     _uSprite: {fileID: 21300000, guid: 2e215e4926f1af947b64163962bcbe7e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 37
     _character: 37
     _uSprite: {fileID: 21300000, guid: f2405d65d2b9e304a9ebaf2350a1c3d8, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 38
     _character: 38
     _uSprite: {fileID: 21300000, guid: e434a79640605984d88d5b1898b36557, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 39
     _character: 39
     _uSprite: {fileID: 21300000, guid: 09ef6513b60c6a442b39538b069dcb5a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 40
     _character: 40
     _uSprite: {fileID: 21300000, guid: ea14799bafc128d4dbc924e756cec64c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 41
     _character: 41
     _uSprite: {fileID: 21300000, guid: 58e953d337cf4e841b74e8313ae5f452, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 42
     _character: 42
     _uSprite: {fileID: 21300000, guid: 307ac8574bbecad41821c3330dd9816e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 43
     _character: 43
     _uSprite: {fileID: 21300000, guid: a6879110cb11147429e0f7ae9e63b209, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 44
     _character: 44
     _uSprite: {fileID: 21300000, guid: 1ee41171a79822b429dfb54a2e44d366, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 45
     _character: 45
     _uSprite: {fileID: 21300000, guid: 0b10ea6597b3f474bb36ce6f7091defc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 46
     _character: 46
     _uSprite: {fileID: 21300000, guid: 04dc344a4c51f4e44b42f4e1d81f5e2a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 47
     _character: 47
     _uSprite: {fileID: 21300000, guid: bd7f9fac6a1617a478c8b264fbaadd52, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 48
     _character: 48
     _uSprite: {fileID: 21300000, guid: 972c3cb145ce70c45b343a8615631366, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 49
     _character: 49
     _uSprite: {fileID: 21300000, guid: 76c7deecbde15fa4fbb08376a2efbb5f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 50
     _character: 50
     _uSprite: {fileID: 21300000, guid: 3f41148472667fd418851c0fe46a96a4, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 51
     _character: 51
     _uSprite: {fileID: 21300000, guid: 6b0e741629cb27f4dadf6fe16da226a3, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 52
     _character: 52
     _uSprite: {fileID: 21300000, guid: 1f05d6509d55ad4468b4cacb4d39bf4c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 53
     _character: 53
     _uSprite: {fileID: 21300000, guid: 87302135f7ecf97468c094fc44534cff, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 54
     _character: 54
     _uSprite: {fileID: 21300000, guid: 83eaa4856b564b24ab339b427a06d2fe, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 55
     _character: 55
     _uSprite: {fileID: 21300000, guid: fbc7ed3087ec89c468e14c2177446f7d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 56
     _character: 56
     _uSprite: {fileID: 21300000, guid: 39491b6da670b624883c8f5d5b93ab88, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 57
     _character: 57
     _uSprite: {fileID: 21300000, guid: fdf0ca167d5bab04794cdd84759d44bd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 58
     _character: 58
     _uSprite: {fileID: 21300000, guid: 8dc18a4e820ff1b4f8d8d1dd100c2622, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 59
     _character: 59
     _uSprite: {fileID: 21300000, guid: 024b8dd48c69cd645917d1ea01397679, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 60
     _character: 60
     _uSprite: {fileID: 21300000, guid: 8a73167a8c92d40488871bc477d23838, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 61
     _character: 61
     _uSprite: {fileID: 21300000, guid: 3c8705828d25a1346a84930a1fffeaee, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 62
     _character: 62
     _uSprite: {fileID: 21300000, guid: b9578cee9d36f7549a5332203a0d9a52, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 63
     _character: 63
     _uSprite: {fileID: 21300000, guid: a94c51d1e1229ea47b72a8b93f0a9fac, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 64
     _character: 64
     _uSprite: {fileID: 21300000, guid: ce41a3d76f2132c4db9d57e43a746be5, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 65
     _character: 65
     _uSprite: {fileID: 21300000, guid: 20ddd630c73674f4fb67f581e91f3ae9, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 66
     _character: 66
     _uSprite: {fileID: 21300000, guid: 2e8f7bfd10b2fb54db09e79c3ef14a16, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 67
     _character: 67
     _uSprite: {fileID: 21300000, guid: 8c6c6a2e189c7cf4196b92828b8d708d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 68
     _character: 68
     _uSprite: {fileID: 21300000, guid: ccb7d2f6be5fb77478ae667ab6e4f20f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 69
     _character: 69
     _uSprite: {fileID: 21300000, guid: e8c7fcb645c24304c9f694f1953ef5df, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 70
     _character: 70
     _uSprite: {fileID: 21300000, guid: 244d294a3d42a7845bd58cd0778893a1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 71
     _character: 71
     _uSprite: {fileID: 21300000, guid: 961f012dd9b1c234e89bab2dee24f4a3, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 72
     _character: 72
     _uSprite: {fileID: 21300000, guid: 0b22b8814c8e09b428008d1f9a000d5a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 73
     _character: 73
     _uSprite: {fileID: 21300000, guid: 2a77221343177b842afccd702ec9616b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 74
     _character: 74
     _uSprite: {fileID: 21300000, guid: 67c66ed2c778a5945aea2839c4c62452, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 75
     _character: 75
     _uSprite: {fileID: 21300000, guid: c69e029de12cfe4499decd2e5afb355c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 76
     _character: 76
     _uSprite: {fileID: 21300000, guid: c5eb0f2fdc7d1b947a7b3b85ecb800ec, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 77
     _character: 77
     _uSprite: {fileID: 21300000, guid: 3470d576a7934e5419c257554bc07201, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 78
     _character: 78
     _uSprite: {fileID: 21300000, guid: bcd158e1f206162428ff0db88be071e3, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 79
     _character: 79
     _uSprite: {fileID: 21300000, guid: 9b8c71debdbddc246b88d733d316b8b9, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 80
     _character: 80
     _uSprite: {fileID: 21300000, guid: aa4ada6d74d177c4f9fe8001a0b2673d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 81
     _character: 81
     _uSprite: {fileID: 21300000, guid: dc2da21ea5177514e91e269289062584, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 82
     _character: 82
     _uSprite: {fileID: 21300000, guid: 2d3238eb411339d4b88afc8030b9cd1d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 83
     _character: 83
     _uSprite: {fileID: 21300000, guid: 89d98c93e2670674b99762191621e522, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 84
     _character: 84
     _uSprite: {fileID: 21300000, guid: b3144e40d21da2e459a44d091ced6bea, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 85
     _character: 85
     _uSprite: {fileID: 21300000, guid: c378b0a4aed5c1848a497485377f9b64, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 86
     _character: 86
     _uSprite: {fileID: 21300000, guid: 101f1fabf812ec4409133ec7423c952f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 87
     _character: 87
     _uSprite: {fileID: 21300000, guid: c538bd4d38bff714a9dba2d23d389b57, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 88
     _character: 88
     _uSprite: {fileID: 21300000, guid: c95d75b7e3bd9eb4e82bceed00250e12, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 89
     _character: 89
     _uSprite: {fileID: 21300000, guid: 98334e24302db9f4b84f4b3aaa0b53a7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 90
     _character: 90
     _uSprite: {fileID: 21300000, guid: aeb7502832f5e31449fd1eea26bb64b6, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 91
     _character: 91
     _uSprite: {fileID: 21300000, guid: 214766262561a02468e337eb6c8f4733, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 92
     _character: 92
     _uSprite: {fileID: 21300000, guid: 24b4c555a4c4e6d4e959921e3de4757d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 93
     _character: 93
     _uSprite: {fileID: 21300000, guid: 2e358702866959c409c10654a74ca5eb, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 94
     _character: 94
     _uSprite: {fileID: 21300000, guid: 695c0332fe84c7340b2dc25cde808f3c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 95
     _character: 95
     _uSprite: {fileID: 21300000, guid: e6d56d24dadcb024ba887e3de685abc4, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 96
     _character: 96
     _uSprite: {fileID: 21300000, guid: 968d1620597bbd9439b0c0e033fd0143, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 97
     _character: 97
     _uSprite: {fileID: 21300000, guid: ce247d6e08ed37f429922dc918d5efa1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 98
     _character: 98
     _uSprite: {fileID: 21300000, guid: 0a5af0bdae1d0654d8619564bfb1e9bf, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 99
     _character: 99
     _uSprite: {fileID: 21300000, guid: 2eae07e72ebb9d544a250519a7e70f44, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 100
     _character: 100
     _uSprite: {fileID: 21300000, guid: eeeeb9b3af0a58d41ba2d772727949f7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 101
     _character: 101
     _uSprite: {fileID: 21300000, guid: 83e73845c2bed4244a982ed835d2743a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 102
     _character: 102
     _uSprite: {fileID: 21300000, guid: 0967914f49799a14a9cb18a1ce965fc2, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 103
     _character: 103
     _uSprite: {fileID: 21300000, guid: 962837a0eabfe424c94172843ea5efe4, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 104
     _character: 104
     _uSprite: {fileID: 21300000, guid: 96ff07ecbe3e168458bd41556412d2ef, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 105
     _character: 105
     _uSprite: {fileID: 21300000, guid: eb7be11589042b94d90ffc942ff8535a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 106
     _character: 106
     _uSprite: {fileID: 21300000, guid: 42388e769d335ba41b10b6a067957ded, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 107
     _character: 107
     _uSprite: {fileID: 21300000, guid: 7160c98c79b6b734685e3d125a267ade, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 108
     _character: 108
     _uSprite: {fileID: 21300000, guid: 9f33d0da708949f4caa1e83604cb81bc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 109
     _character: 109
     _uSprite: {fileID: 21300000, guid: eb28bbda177f5f5469049883f2796d1c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 110
     _character: 110
     _uSprite: {fileID: 21300000, guid: 521cdb052cdac1b4abb48aaba93bc0dd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 111
     _character: 111
     _uSprite: {fileID: 21300000, guid: edaeb6fa2ab409546bcfbccd048f2405, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 112
     _character: 112
     _uSprite: {fileID: 21300000, guid: 16489bc98d0fefa46a3f79131ab843cc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 113
     _character: 113
     _uSprite: {fileID: 21300000, guid: cfb4ffba0c7be2a4e89d09edecfa2c08, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 114
     _character: 114
     _uSprite: {fileID: 21300000, guid: 0aa5b0f8ffaabf9438bc4804eabc0963, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 115
     _character: 115
     _uSprite: {fileID: 21300000, guid: b67297c926569154480bc4b4415431d1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 116
     _character: 116
     _uSprite: {fileID: 21300000, guid: b341022135c09834aa1d58a4bc6f7b92, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 117
     _character: 117
     _uSprite: {fileID: 21300000, guid: d6a0ed10f9432dd4e8394ee8ce8a7fee, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 118
     _character: 118
     _uSprite: {fileID: 21300000, guid: 18a8b1e404ed8c54aa2da24dc38594c9, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 119
     _character: 119
     _uSprite: {fileID: 21300000, guid: cd344ee95c8703b499b57dad4a0007fd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 120
     _character: 120
     _uSprite: {fileID: 21300000, guid: a5bffa7d70ebf954985af87926d39e5a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 121
     _character: 121
     _uSprite: {fileID: 21300000, guid: 9d56b6bab5256584e8796bcda2d2abe1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 122
     _character: 122
     _uSprite: {fileID: 21300000, guid: 5cffd54c2dc00cd4e8915cddc55ebd8b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 123
     _character: 123
     _uSprite: {fileID: 21300000, guid: b8e6f87640e7ae64297c1efdc43f82dc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 124
     _character: 124
     _uSprite: {fileID: 21300000, guid: 50e9a26431f77db438aed1695b082811, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 125
     _character: 125
     _uSprite: {fileID: 21300000, guid: 2f60be94fdd61f9499f3b2191fd3afa2, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 126
     _character: 126
     _uSprite: {fileID: 21300000, guid: b26ca794e03306a48925f5c05daf32f7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 127
     _character: 8962
     _uSprite: {fileID: 21300000, guid: 6a005cdad4eb5e04eb24517730c4557f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 128
     _character: 199
     _uSprite: {fileID: 21300000, guid: 329f9921e3057b84aa83fc214aefea6f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 129
     _character: 252
     _uSprite: {fileID: 21300000, guid: 0fe18b70c5c116042b5b0ba188089bd7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 130
     _character: 233
     _uSprite: {fileID: 21300000, guid: a9ee91a712bbdbf40a19f9f7187478e5, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 131
     _character: 226
     _uSprite: {fileID: 21300000, guid: d568a16ef174e8347816baea037050da, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 132
     _character: 228
     _uSprite: {fileID: 21300000, guid: 1c286dfc13f15dd44a175c45d674131a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 133
     _character: 224
     _uSprite: {fileID: 21300000, guid: e1f17c7d689095943b69f8ae146bcd69, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 134
     _character: 229
     _uSprite: {fileID: 21300000, guid: be930ed8cb0f88e4baf82db500b7d295, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 135
     _character: 231
     _uSprite: {fileID: 21300000, guid: 57dc389ee14fcfb42a85f508acd296a9, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 136
     _character: 234
     _uSprite: {fileID: 21300000, guid: d812c29c69f2e1446b54fbe032333a8f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 137
     _character: 235
     _uSprite: {fileID: 21300000, guid: 23c9495300bc57640ac193d2ae5fa4d8, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 138
     _character: 232
     _uSprite: {fileID: 21300000, guid: 3c3888679ff34e7469a1bf3ffcb9d222, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 139
     _character: 239
     _uSprite: {fileID: 21300000, guid: daa2280746396774cb1563b116e43f54, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 140
     _character: 238
     _uSprite: {fileID: 21300000, guid: d1b00464bb5775a448da2fedd7fd90f7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 141
     _character: 236
     _uSprite: {fileID: 21300000, guid: b19793c9be06c214eb4ffcdcf52097dd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 142
     _character: 196
     _uSprite: {fileID: 21300000, guid: 27ec9b3a02b4085428d041f8188e2058, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 143
     _character: 197
     _uSprite: {fileID: 21300000, guid: 347e485957f0e824a8584a0ed3cffe75, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 144
     _character: 201
     _uSprite: {fileID: 21300000, guid: ed4f89bb25dc38c47b8e201470a39ecc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 145
     _character: 230
     _uSprite: {fileID: 21300000, guid: 7fa2a6f34ac49184ba878907ba44eb93, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 146
     _character: 198
     _uSprite: {fileID: 21300000, guid: b84622339dafe924991f09301496c49f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 147
     _character: 244
     _uSprite: {fileID: 21300000, guid: fe7a2a098a50db244908ad5ea267574a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 148
     _character: 246
     _uSprite: {fileID: 21300000, guid: 6b2aefa2e14850d4a95bc133a9623a21, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 149
     _character: 242
     _uSprite: {fileID: 21300000, guid: 07e1706f1af92cd44beee54214885138, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 150
     _character: 251
     _uSprite: {fileID: 21300000, guid: a8cb2e0f2c9841d43982a0a5fc8b96dc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 151
     _character: 249
     _uSprite: {fileID: 21300000, guid: 006360f79768f7b4c90a3bca3794ad13, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 152
     _character: 255
     _uSprite: {fileID: 21300000, guid: cff49ff59b4a62847a34aac8311f4136, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 153
     _character: 214
     _uSprite: {fileID: 21300000, guid: a33575897d19a914e89d1c4237781482, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 154
     _character: 220
     _uSprite: {fileID: 21300000, guid: d1bc374aeeb0e234c9742abfb5a6a2a7, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 155
     _character: 162
     _uSprite: {fileID: 21300000, guid: 31e681001db861840b6a1723f2edf7e6, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 156
     _character: 163
     _uSprite: {fileID: 21300000, guid: 6918ffd238446c446b1f242b47dcc02c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 157
     _character: 165
     _uSprite: {fileID: 21300000, guid: 33cd3e45bfeee9340bfca54400d165fe, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 158
     _character: 8359
     _uSprite: {fileID: 21300000, guid: 0105f0e129e68324192e5bced5e7dbe1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 159
     _character: 402
     _uSprite: {fileID: 21300000, guid: a4b60af76fa9e9049ae23af4a79f1237, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 160
     _character: 225
     _uSprite: {fileID: 21300000, guid: 6f591758c6fa4ea419e124199e9c4cd1, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 161
     _character: 237
     _uSprite: {fileID: 21300000, guid: 37e7656e40c424a4d881d0c56886e692, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 162
     _character: 243
     _uSprite: {fileID: 21300000, guid: 49bd4873e7da8614bbceba23afa40f2e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 163
     _character: 250
     _uSprite: {fileID: 21300000, guid: 23c3ca709386d344eb753906bccc1a76, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 164
     _character: 241
     _uSprite: {fileID: 21300000, guid: 6c8e6da94efd51b49a9e53e4ad7aec83, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 165
     _character: 209
     _uSprite: {fileID: 21300000, guid: 9ddca3337a4279b4a9ab0354f0c42929, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 166
     _character: 170
     _uSprite: {fileID: 21300000, guid: 54f6c1e12621b0147b5f69f2afddb796, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 167
     _character: 186
     _uSprite: {fileID: 21300000, guid: a94b1bc4d657962438c3a1cd139a2b3a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 168
     _character: 191
     _uSprite: {fileID: 21300000, guid: f6604a6cc61910a4b8cbff75efe5155a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 169
     _character: 8976
     _uSprite: {fileID: 21300000, guid: b2894e9734abe0a4887a97171054accf, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 170
     _character: 172
     _uSprite: {fileID: 21300000, guid: 635907c581678c34ca28ec66b30c686f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 171
     _character: 189
     _uSprite: {fileID: 21300000, guid: 5737b04ba062b9e4bb3cc2449405c08e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 172
     _character: 188
     _uSprite: {fileID: 21300000, guid: b6904e5bc8046ba4c92ee3da3863215f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 173
     _character: 161
     _uSprite: {fileID: 21300000, guid: d1a09e34cae98c74589567a6c539f0d2, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 174
     _character: 171
     _uSprite: {fileID: 21300000, guid: 952016cfcc0eecd4897c8519c60a5cec, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 175
     _character: 187
     _uSprite: {fileID: 21300000, guid: 092988eb6146acb47870b1f1201b8366, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 176
     _character: 9617
     _uSprite: {fileID: 21300000, guid: 28f63485b2b75614ea7de71e586ceaa0, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 177
     _character: 9618
     _uSprite: {fileID: 21300000, guid: 7e5332b59e7bd6e409eedf66429af288, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 178
     _character: 9619
     _uSprite: {fileID: 21300000, guid: 767c7337506d6b04d855680577313d41, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 179
     _character: 9474
     _uSprite: {fileID: 21300000, guid: 8a3927dc9b6ebc24a9e6c09b3a4a3a63, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 180
     _character: 9508
     _uSprite: {fileID: 21300000, guid: 921a173d186f0dd40bb59c850f7f1b94, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 181
     _character: 9569
     _uSprite: {fileID: 21300000, guid: 48bce46068cafd04e9b4da671a1cb8b3, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 182
     _character: 9570
     _uSprite: {fileID: 21300000, guid: 313866ce47dd2dc4aba7af21a459831c, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 183
     _character: 9558
     _uSprite: {fileID: 21300000, guid: a119ecfc355ad6f45952268aa208d847, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 184
     _character: 9557
     _uSprite: {fileID: 21300000, guid: 5f1f8eae977cbbc4bbfb50208b734577, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 185
     _character: 9571
     _uSprite: {fileID: 21300000, guid: 7a9a3a093b6d841499c5eff60cf50e37, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 186
     _character: 9553
     _uSprite: {fileID: 21300000, guid: 828ce3671212d9e4e8fefb9664a92af9, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 187
     _character: 9559
     _uSprite: {fileID: 21300000, guid: c3f2f0da8d6f84641b904323b615e187, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 188
     _character: 9565
     _uSprite: {fileID: 21300000, guid: 3ebb551dbbb269a4f91bae6e587b1379, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 189
     _character: 9564
     _uSprite: {fileID: 21300000, guid: 1caa4ced9468d114c8e08397b73b1b87, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 190
     _character: 9563
     _uSprite: {fileID: 21300000, guid: 467aafcb59d1c5a4592aaa33db1d151a, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 191
     _character: 9488
     _uSprite: {fileID: 21300000, guid: 428734a7c692ac944b931d340cd948c1, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 192
     _character: 9492
     _uSprite: {fileID: 21300000, guid: e10443306d6d5454688d29fe9743783f, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 193
     _character: 9524
     _uSprite: {fileID: 21300000, guid: 9447dcf45d2534742a9bac29051db5d9, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 194
     _character: 9516
     _uSprite: {fileID: 21300000, guid: 1390fb0650e06484393aef609e3269f9, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 195
     _character: 9500
     _uSprite: {fileID: 21300000, guid: 093561d92067fad4296faf62b12d1d53, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 196
     _character: 9472
     _uSprite: {fileID: 21300000, guid: bf1caa473a21a8146a781be1a4b859ee, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 197
     _character: 9532
     _uSprite: {fileID: 21300000, guid: a36c44f038835d84b8587e58416cfcf2, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 198
     _character: 9566
     _uSprite: {fileID: 21300000, guid: 5cb7ee7ca2cfa8342b14785d2c271ab7, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 199
     _character: 9567
     _uSprite: {fileID: 21300000, guid: 33a702b3d7ebe2e47b902dcddff84a81, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 200
     _character: 9562
     _uSprite: {fileID: 21300000, guid: 94421d7dc83060749a03ebb1f26fc797, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 201
     _character: 9556
     _uSprite: {fileID: 21300000, guid: a10bb4228c32e5d499675f5f6461d14e, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 202
     _character: 9577
     _uSprite: {fileID: 21300000, guid: 17138f33c3b3bce4cbc29bf92c55f4da, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 203
     _character: 9574
     _uSprite: {fileID: 21300000, guid: b19445de1d9b5cc42b0695d309815df8, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 204
     _character: 9568
     _uSprite: {fileID: 21300000, guid: f927a3e60a7213440ab91338a0691eab, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 205
     _character: 9552
     _uSprite: {fileID: 21300000, guid: 9f2420a6251812644a187d171a319c27, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 206
     _character: 9580
     _uSprite: {fileID: 21300000, guid: 6b2e83bb0871cb84ead4ba923c2cb5aa, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 207
     _character: 9575
     _uSprite: {fileID: 21300000, guid: 77be69e85e6221745ac2f5f664ac658d, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 208
     _character: 9576
     _uSprite: {fileID: 21300000, guid: 87eb89c1dc4b53c498b11c3b7575b19b, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 209
     _character: 9572
     _uSprite: {fileID: 21300000, guid: e55981a638ee8cc43af449cf1a43dccf, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 210
     _character: 9573
     _uSprite: {fileID: 21300000, guid: ad7fe99ca50bc6b43802817e4fb36711, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 211
     _character: 9561
     _uSprite: {fileID: 21300000, guid: cbfbdaa943abbb947a19a840999a9191, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 212
     _character: 9560
     _uSprite: {fileID: 21300000, guid: d5a34c4c531049f4ba6eebd6bb05508c, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 213
     _character: 9554
     _uSprite: {fileID: 21300000, guid: da928b8aeb4650d44a5cf208f4e42eb5, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 214
     _character: 9555
     _uSprite: {fileID: 21300000, guid: a2810611c40aa7345ad12ecc796b0a72, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 215
     _character: 9579
     _uSprite: {fileID: 21300000, guid: 44a7df2c921a23c46a1210c7d6f00f31, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 216
     _character: 9578
     _uSprite: {fileID: 21300000, guid: 52073491844ac0041a8449e155c9de80, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 217
     _character: 9496
     _uSprite: {fileID: 21300000, guid: 0791fb092828af640a22a342d6128987, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 218
     _character: 9484
     _uSprite: {fileID: 21300000, guid: a4f74c42d7778e244bb5af95049bcdf5, type: 3}
     _isUI: 1
+    _filterMode: 0
   - _asciiValue: 219
     _character: 9608
     _uSprite: {fileID: 21300000, guid: 5b211b10eb254574bab122980508b6bc, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 220
     _character: 9604
     _uSprite: {fileID: 21300000, guid: 6006b4d3838e3e1449b96f50128cb9ca, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 221
     _character: 9612
     _uSprite: {fileID: 21300000, guid: caf382c96eb5c00488fa0e232fbbf823, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 222
     _character: 9616
     _uSprite: {fileID: 21300000, guid: 62ec7e590989925419489eb2cf84b7cf, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 223
     _character: 9600
     _uSprite: {fileID: 21300000, guid: 163f5fa4b9c20824abd88c055211880f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 224
     _character: 945
     _uSprite: {fileID: 21300000, guid: ccf5bbfc31a9ca24fb9e0d30c69cb20d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 225
     _character: 223
     _uSprite: {fileID: 21300000, guid: f387da25dae860f44aa491a386a9672e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 226
     _character: 915
     _uSprite: {fileID: 21300000, guid: 77eedf9652a106643a58dbdbfc74777c, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 227
     _character: 960
     _uSprite: {fileID: 21300000, guid: b392c49d016c9c545b59707c30c70644, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 228
     _character: 931
     _uSprite: {fileID: 21300000, guid: 4861adf7c1ec2d14980ca45b5b53c20f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 229
     _character: 963
     _uSprite: {fileID: 21300000, guid: 09078fce4edbfd94ab3f57f3d5da3101, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 230
     _character: 181
     _uSprite: {fileID: 21300000, guid: 535284dd8c3c8ae48811e479e17a2708, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 231
     _character: 964
     _uSprite: {fileID: 21300000, guid: 786c739f23197b447ac3cc2421696d30, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 232
     _character: 934
     _uSprite: {fileID: 21300000, guid: e0645c504355c7140b61709db3f0d429, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 233
     _character: 920
     _uSprite: {fileID: 21300000, guid: a0ee2ae30213d20478d524a10c371029, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 234
     _character: 937
     _uSprite: {fileID: 21300000, guid: 08e8e2f3a4c4af84a9de1050064dbb5f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 235
     _character: 948
     _uSprite: {fileID: 21300000, guid: 8143f7bc0c6ae2749b65e09f41b3506b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 236
     _character: 8734
     _uSprite: {fileID: 21300000, guid: ed4c68a56254c8a47b9142f0c0ca3917, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 237
     _character: 966
     _uSprite: {fileID: 21300000, guid: 5ed25949630301d4e915713f99c25451, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 238
     _character: 949
     _uSprite: {fileID: 21300000, guid: 7f4afd9e9532c024a89bbcc6934045bd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 239
     _character: 8745
     _uSprite: {fileID: 21300000, guid: eaa2b64e531f5e24d903e1a568a2493f, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 240
     _character: 8801
     _uSprite: {fileID: 21300000, guid: 4337f9772109af04cba2f307d8d4d19d, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 241
     _character: 177
     _uSprite: {fileID: 21300000, guid: e23b2881523f08345a17523390db049a, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 242
     _character: 8805
     _uSprite: {fileID: 21300000, guid: 6e7b9e084156d544caa936bf85c8b63b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 243
     _character: 8804
     _uSprite: {fileID: 21300000, guid: 10ea45be229606e449250c113b2cdb8b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 244
     _character: 8992
     _uSprite: {fileID: 21300000, guid: f10059f91ae2ce94b920d8eec74d7dc0, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 245
     _character: 8993
     _uSprite: {fileID: 21300000, guid: 88f8675215544ec4ca4bc527b8a3e097, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 246
     _character: 247
     _uSprite: {fileID: 21300000, guid: f767aace2eba91642be1f63653ce537b, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 247
     _character: 8776
     _uSprite: {fileID: 21300000, guid: 6208ae24db6f916428820fdf989bccbd, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 248
     _character: 176
     _uSprite: {fileID: 21300000, guid: 5329d0745cc14a442ae4038ee64c506e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 249
     _character: 8729
     _uSprite: {fileID: 21300000, guid: ba5a002d0b86e9f4c94792ff0b51eae0, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 250
     _character: 183
     _uSprite: {fileID: 21300000, guid: 5df79fab3ce0ccb41ba93a338e627c64, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 251
     _character: 8730
     _uSprite: {fileID: 21300000, guid: 5c68b82efbf1e9b41ab7082dcd360b04, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 252
     _character: 8319
     _uSprite: {fileID: 21300000, guid: 0d64eb974aa0ae8419c0a429db7d920e, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 253
     _character: 178
     _uSprite: {fileID: 21300000, guid: 4513fe67250ec5d4fa978f99573a1c30, type: 3}
     _isUI: 0
+    _filterMode: 0
   - _asciiValue: 254
     _character: 9632
     _uSprite: {fileID: 21300000, guid: 2a7da9618537a5b43a876689624fec79, type: 3}
     _isUI: 0
+    _filterMode: 0
 --- !u!1 &4503162648420995649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,8 +1642,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7911212190941422141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
@@ -1447,6 +1703,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1564,6 +1821,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0

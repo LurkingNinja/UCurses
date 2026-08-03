@@ -16,14 +16,13 @@ UCurses requires installation of the Unity Input System through the Package Mana
 
 ## Setup
 
-__Automatic__ __Install__
+#### Automatic Install
 
 An asset package of UCurses can be downloaded from the Unity Store website at:
 https://assetstore.unity.com/packages/tools/gui/ucurses-311511 
 
 
-
-__Manual__ __Install__
+#### Manual Install
 
 To manually install UCurses, import the "UCurses" folder from this repository into your project.
 
@@ -45,23 +44,28 @@ Warning: It is highly recommended that you create a new scene for use with UCurs
 ### Setup Window
 The setup window allows you to set the options for how UCurses is deployed.
 
-* Grid Size: This setting controls how many row and columns the character grid on screen has, and the base rendering resolution that the grid will use. The dropdown has a selection of curated VGA text modes that allow a range of different looks for your grid. If you would instead like to create your own selection, choose the Custom option to get additional settings.
+* __Grid__ __Size:__ This setting controls how many row and columns the character grid on screen has, and the base rendering resolution that the grid will use. The dropdown has a selection of curated VGA text modes that allow a range of different looks for your grid. If you would instead like to create your own selection, choose the Custom option to get additional settings.
 
-    * Size of Grid: Sets how many row and columns are in the character grid.
+    * __Size__ __of__ __Grid:__ Sets how many row and columns are in the character grid.
 
-    * DOS Screen Resolution: Sets the reference resolu􀀋on that the grid will use.
+    * __DOS__ __Screen__ __Resolution:__ Sets the reference resolu􀀋on that the grid will use.
 
-    * Character Size: The size of each character space in the grid.
+    * __Character__ __Size:__ The size of each character space in the grid.
 
-    * Offset Line: Adds a extra line after each character space.
+    * __Offset__ __Line:__ Adds a extra line after each character space.
 
-* Aspect Ratio: This sets the aspect ratio for the display output to the main camera.
+* __Aspect__ __Ratio:__ This sets the aspect ra􀀋o for the display output to the main camera. The dropdown includes a selection of commonly used aspect ra􀀋os, and Original which keeps the aspect ra􀀋o of the set Dos resolution.
 
-* Character Filter: This controls the texture filtering of the character sprites used in the grid.
+* __Screen__ __Alignment:__ This sets the horizontal alignment of the display output window. There are three options: Middle, Left, and Right.
 
-* Screen Filter: This controls the texture filtering of the screen display.
 
-* Set Grid Button: Clicking the Set Grid Button for the first time deploys UCurses to the current scene, creating all needed objects in the scene as children of an object called UCurses. Once the deploy of UCurses is finished, it is ready to be used in any script within the scene. Once UCurses is deployed for the first time clicking the button again will set the UCurses settngs to the current selection of settngs in the Setup Window.
+* __Alignment__ __Offset:__ This sets an offset for the horizontal screen position in pixels. Using a positive value moves the window to the right, and negative value to the left.
+
+* __Character__ __Filter:__ This controls the texture filtering of the character sprites used in the grid.
+
+* __Screen__ __Filter:__ This controls the texture filtering of the screen display.
+
+* __Set__ __Grid__ __Button:__ Clicking the Set Grid Button for the first time deploys UCurses to the current scene, creating all needed objects in the scene as children of an object called UCurses. Once the deploy of UCurses is finished, it is ready to be used in any script within the scene. Once UCurses is deployed for the first time clicking the button again will set the UCurses settngs to the current selection of settngs in the Setup Window.
 
 
 

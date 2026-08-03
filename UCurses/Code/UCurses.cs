@@ -10,6 +10,8 @@ using System.Drawing;
 //Main singleton UCurses class used for all major functionality.
 namespace UCursesInclude
 {
+    public enum ScreenAlignment { Middle, Left, Right }
+
     [DefaultExecutionOrder(-900)]
     public class UCurses : MonoBehaviour
     {
@@ -21,7 +23,7 @@ namespace UCursesInclude
             {
                 if (InstanceOf == null)
                 {
-                    InstanceOf = GameObject.FindFirstObjectByType<UCurses>();
+                    InstanceOf = GameObject.FindAnyObjectByType<UCurses>();
                 }
                 return InstanceOf;
             }
@@ -45,6 +47,8 @@ namespace UCursesInclude
         [SerializeField] private Vector2Int _gridSize;
         [SerializeField] private Vector2Int _dosScreenResolution;
         [SerializeField] private float _aspectRatio;
+        [SerializeField] private ScreenAlignment _alignment;
+        [SerializeField] private float _alignmentOffset = 0;
         [SerializeField] private Vector2Int _characterSize;
         [SerializeField] private bool _offsetLine;
         [SerializeField] private FilterMode _screenFilterMode;
@@ -105,6 +109,7 @@ namespace UCursesInclude
         {
             createGrid(_gridSize.x, _gridSize.y);
             _gridImage.GetComponent<RectTransform>().sizeDelta = new Vector2(getHorizontalAspectRatio(Screen.height, _aspectRatio), Screen.height);
+            setScreenAlignment(_alignment, _alignmentOffset);
             _gridRenderTexture.filterMode = _screenFilterMode;
         }
 
@@ -122,6 +127,8 @@ namespace UCursesInclude
             _gridSize = screenMode.GridSize;
             _dosScreenResolution = screenMode.DosScreenResolution;
             _aspectRatio = screenMode.AspectRatio;
+            _alignment = screenMode.ScreenAlignment;
+            _alignmentOffset = screenMode.ScreenOffset;
             _characterSize = screenMode.CharacterSize;
             _offsetLine = screenMode.OffsetLine;
             _screenFilterMode = screenMode.ScreenFilterMode;
@@ -146,12 +153,29 @@ namespace UCursesInclude
             renderTexture.Create();
         }
 
+        //Sets the horizontal alignment of the screen
+        private void setScreenAlignment(ScreenAlignment alignment, float screenOffset)
+        {
+            switch (alignment)
+            {
+                case ScreenAlignment.Middle:
+                    _gridImage.GetComponent<RectTransform>().anchoredPosition = new Vector2((Screen.width / 2) - (_gridImage.GetComponent<RectTransform>().rect.width / 2) + screenOffset, _gridImage.GetComponent<RectTransform>().anchoredPosition.y);
+                    break;
+                case ScreenAlignment.Left:
+                    _gridImage.GetComponent<RectTransform>().anchoredPosition = new Vector2(screenOffset, _gridImage.GetComponent<RectTransform>().anchoredPosition.y);
+                    break;
+                case ScreenAlignment.Right:
+                    _gridImage.GetComponent<RectTransform>().anchoredPosition = new Vector2(Screen.width - _gridImage.GetComponent<RectTransform>().rect.width + screenOffset, _gridImage.GetComponent<RectTransform>().anchoredPosition.y);
+                    break;
+            }
+        }
+
         //Creates a grid tile on the canvas.
         private GameObject createGridTile(float pixPosX, float pixPosY, float pixSizeX, float pixSizeY, string objectName, GameObject subcanvasObject)
         {
             GameObject cSpace = GameObject.Instantiate(_gridTilePrefab);
             cSpace.transform.SetParent(subcanvasObject.transform);
-            cSpace.GetComponent<RectTransform>().anchoredPosition = new Vector2(pixPosX - (_canvasGridObject.GetComponent<CanvasScaler>().referenceResolution.x / 2), pixPosY);
+            cSpace.GetComponent<RectTransform>().anchoredPosition = new Vector2(pixPosX, pixPosY);
             cSpace.GetComponent<GridTile>().SizeDelta = new Vector2(pixSizeX, pixSizeY);
             cSpace.name = objectName;
             return cSpace;
@@ -470,25 +494,27 @@ namespace UCursesInclude
         //Retrieves the position of the mouse on the character grid. Returns (-1, -1) if outside of the character grid.
         public Vector2Int mousePosition()
         {
-            Vector2 canvasSpaceMousePos;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(_gridImage.GetComponent<RectTransform>(), Mouse.current.position.ReadValue(), _cameraMainObject.GetComponent<Camera>(), out canvasSpaceMousePos);
-            canvasSpaceMousePos.x = canvasSpaceMousePos.x + (_gridImage.GetComponent<RectTransform>().rect.width / 2);
-            canvasSpaceMousePos.y = -(canvasSpaceMousePos.y + -(_gridImage.GetComponent<RectTransform>().rect.height / 2));
-            if (canvasSpaceMousePos.x < 0 || canvasSpaceMousePos.y < 0 ||
-                canvasSpaceMousePos.x > _gridImage.GetComponent<RectTransform>().rect.width ||
-                canvasSpaceMousePos.y > _gridImage.GetComponent<RectTransform>().rect.height)
-            {
-                return new Vector2Int(-1, -1);
-            }
-            canvasSpaceMousePos.x = canvasSpaceMousePos.x / (_gridImage.GetComponent<RectTransform>().rect.width / _gridSize.x);
-            canvasSpaceMousePos.y = canvasSpaceMousePos.y / (_gridImage.GetComponent<RectTransform>().rect.height / _gridSize.y);
+            Vector2 mousePos = new Vector2(Mouse.current.position.ReadValue().x, Screen.height - Mouse.current.position.ReadValue().y);
+            float anchoredPositionX = _gridImage.GetComponent<RectTransform>().anchoredPosition.x;
+            float anchoredPositionY = _gridImage.GetComponent<RectTransform>().anchoredPosition.y;
+            float rectWidth = _gridImage.GetComponent<RectTransform>().rect.width;
+            float rectHeight = _gridImage.GetComponent<RectTransform>().rect.height;
 
-            if ((int)canvasSpaceMousePos.x == _gridSize.x || (int)canvasSpaceMousePos.y == _gridSize.y)
+            if (mousePos.x >= anchoredPositionX &&
+                mousePos.y >= anchoredPositionY &&
+                mousePos.x < anchoredPositionX + rectWidth &&
+                mousePos.y < anchoredPositionY + rectHeight)
             {
-                return new Vector2Int(-1, -1);
+                mousePos.x -= anchoredPositionX;
+                mousePos.y -= anchoredPositionY;
+
+                mousePos.x = mousePos.x / (rectWidth / _gridSize.x);
+                mousePos.y = mousePos.y / (rectHeight / _gridSize.y);
+
+                return new Vector2Int((int)mousePos.x, (int)mousePos.y);
             }
 
-            return new Vector2Int((int)canvasSpaceMousePos.x, (int)canvasSpaceMousePos.y);
+            return new Vector2Int(-1, -1);
         }
 
         //Sets if character on the character grid is blinking.
@@ -576,17 +602,21 @@ namespace UCursesInclude
         private Vector2Int _gridSize;
         private Vector2Int _dosScreenResolution;
         private float _aspectRatio;
+        private ScreenAlignment _screenAlignment;
+        private float _screenOffset;
         private Vector2Int _characterSize;
         private bool _offsetLine;
         private FilterMode _screenFilterMode;
         private FilterMode _characterFilterMode;
 
 
-        public DosScreenMode(Vector2Int gridSize, Vector2Int screenResolution, float aspectRatio, Vector2Int characterSize, bool offsetLine, FilterMode screenFilterMode, FilterMode characterFilterMode)
+        public DosScreenMode(Vector2Int gridSize, Vector2Int screenResolution, float aspectRatio, ScreenAlignment horizontalAlignment, float horizontalOffset, Vector2Int characterSize, bool offsetLine, FilterMode screenFilterMode, FilterMode characterFilterMode)
         {
             _gridSize = gridSize;
             _dosScreenResolution = screenResolution;
             _aspectRatio = aspectRatio;
+            _screenAlignment = horizontalAlignment;
+            _screenOffset = horizontalOffset;
             _characterSize = characterSize;
             _offsetLine = offsetLine;
             _screenFilterMode = screenFilterMode;
@@ -607,6 +637,16 @@ namespace UCursesInclude
         public float AspectRatio
         {
             get { return _aspectRatio; }
+        }
+
+        public ScreenAlignment ScreenAlignment
+        {
+            get { return _screenAlignment; }
+        }
+
+        public float ScreenOffset
+        {
+            get { return _screenOffset; }
         }
 
         public Vector2Int CharacterSize

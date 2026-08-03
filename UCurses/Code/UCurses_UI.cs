@@ -12,6 +12,8 @@ namespace UCursesInclude
         private Vector2Int _gridSize;
         private Vector2Int _dosScreenResolution;
         private float _aspectRatio;
+        private ScreenAlignment _screenAlignment;
+        private float _alignmentOffsetSelection;
         private Vector2Int _characterSize;
         private bool _offsetLine;
         private FilterMode _filterModeCharacters;
@@ -19,6 +21,7 @@ namespace UCursesInclude
 
         private int _gridSizePopupSelection = 0;
         private int _aspectRatioPopupSelection = 0;
+        private int _screenAlignmentSelection = 0;
         private int _filterModeCharactersSelection = 0;
         private int _filterModeScreenSelection = 0;
 
@@ -26,6 +29,7 @@ namespace UCursesInclude
         private string[] _textureFilterModeDropdown = new string[] { "Point", "Bilinear", "Trilinear" };
         private string[] _gridSizeDropdown = new string[] { "40×25 (320×200)", "80×25 (640×200)", "80×50 (640×400)", "80×60 (640×480)", "80×30 (640×480)", "80×25 (720×400)", "Custom" };
         private string[] _aspectRatioDropdown = new string[] { "Original", "3:2", "4:3", "5:4", "16:9", "16:10" };
+        private string[] _screenAlignmentDropdown = new string[] { "Middle", "Left", "Right"};
         private char[] _asciiCharacterSet = new char[] { '☺', '☻', '♥', '♦', '♣', '♠', '•', '◘', '○', '◙', '♂', '♀', '♪', '♫', '☼', '►', '◄', '↕', '‼', '¶', '§', '▬', '↨', '↑', '↓', '→', '←', '∟', '↔', '▲', '▼',
                                     ' ', '!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '=', '>', '?',
                                     '@', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', '^', '_',
@@ -47,6 +51,8 @@ namespace UCursesInclude
         {
             _gridSizePopupSelection = EditorPrefs.GetInt("GridPopupSelection");
             _aspectRatioPopupSelection = EditorPrefs.GetInt("AspectRatioSelection");
+            _screenAlignmentSelection = EditorPrefs.GetInt("ScreenAlignmentSelection");
+            _alignmentOffsetSelection = EditorPrefs.GetFloat("ScreenOffsetSelection");
 
             _filterModeCharactersSelection = EditorPrefs.GetInt("FilterModeCharacters");
             _filterModeScreenSelection = EditorPrefs.GetInt("FilterModeScreen");
@@ -136,6 +142,25 @@ namespace UCursesInclude
                     break;
             }
 
+            _screenAlignmentSelection = EditorGUILayout.Popup("Screen Alignment", _screenAlignmentSelection, _screenAlignmentDropdown);
+            switch (_screenAlignmentSelection)
+            {
+                //Middle
+                case 0:
+                    _screenAlignment = ScreenAlignment.Middle;
+                    break;
+                //Left
+                case 1:
+                    _screenAlignment = ScreenAlignment.Left;
+                    break;
+                //Right
+                case 2:
+                    _screenAlignment = ScreenAlignment.Right;
+                    break;
+            }
+
+            _alignmentOffsetSelection = EditorGUILayout.FloatField("Alignment Offset", _alignmentOffsetSelection);
+
             _filterModeCharactersSelection = EditorGUILayout.Popup("Character Filter", _filterModeCharactersSelection, _textureFilterModeDropdown);
             switch (_filterModeCharactersSelection)
             {
@@ -219,10 +244,12 @@ namespace UCursesInclude
                 }
 
                 curses.setCharSprites(spriteIndex);
-                curses.setDosScreenMode(new DosScreenMode(_gridSize, _dosScreenResolution, _aspectRatio, _characterSize, _offsetLine, _filterModeScreen, _filterModeCharacters));
+                curses.setDosScreenMode(new DosScreenMode(_gridSize, _dosScreenResolution, _aspectRatio, _screenAlignment, _alignmentOffsetSelection, _characterSize, _offsetLine, _filterModeScreen, _filterModeCharacters));
 
                 EditorPrefs.SetInt("GridPopupSelection", _gridSizePopupSelection);
                 EditorPrefs.SetInt("AspectRatioSelection", _aspectRatioPopupSelection);
+                EditorPrefs.SetInt("ScreenAlignmentSelection", _screenAlignmentSelection);
+                EditorPrefs.SetFloat("ScreenOffsetSelection", _alignmentOffsetSelection);
 
                 EditorPrefs.SetInt("FilterModeCharacters", _filterModeCharactersSelection);
                 EditorPrefs.SetInt("FilterModeScreen", _filterModeScreenSelection);
